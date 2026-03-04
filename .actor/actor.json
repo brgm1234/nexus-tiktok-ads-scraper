@@ -1,0 +1,43 @@
+{
+  "actorSpecification": 1,
+  "name": "nexus-tiktok-ads-scraper",
+  "title": "Nexus TikTok Ads Scraper",
+  "description": "Scrapes TikTok Ads Library for ad creatives, targeting info, and performance data using Playwright + Crawlee.",
+  "version": "1.0.0",
+  "buildTag": "latest",
+  "input": "./INPUT_SCHEMA.json",
+  "dockerfile": "./Dockerfile",
+  "storages": {
+    "dataset": {
+      "actorSpecification": 1,
+      "title": "Nexus TikTok Ads Scraper Results",
+      "views": {
+        "overview": {
+          "title": "Overview",
+          "transformation": {
+            "fields": [
+              "url",
+              "title",
+              "data"
+            ]
+          },
+          "display": {
+            "component": "table",
+            "properties": {
+              "url": {
+                "label": "URL",
+                "format": "link"
+              },
+              "title": {
+                "label": "Title"
+              },
+              "data": {
+                "label": "Data"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
