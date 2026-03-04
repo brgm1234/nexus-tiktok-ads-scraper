@@ -1,0 +1,16 @@
+{
+  "name": "nexus-tiktok-ads-scraper",
+  "version": "1.0.0",
+  "description": "Scrapes TikTok Ads Library for ad creatives, targeting info, and performance data using Playwright + Crawlee.",
+  "main": "src/main.js",
+  "scripts": {
+    "start": "node src/main.js"
+  },
+  "dependencies": {
+    "apify": "^3.1.0",
+    "crawlee": "^3.5.0",
+    "playwright": "^1.40.0"
+  },
+  "author": "Nexus-1",
+  "license": "ISC"
+}
